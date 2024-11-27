@@ -22,7 +22,7 @@ function Register() {
         setPhone(event.target.value)
     }
     function handleClick() {
-        let obj = { email, userName, phone, password };
+        let obj = {id:Math.random().toString(), email, userName, phone, password };
         setDemoData((prev) => [...prev, obj])
         console.log(demoData)
         setUserName("")
@@ -45,16 +45,22 @@ function Register() {
 }
 
 function DisplayData({demoData,setDemoData}){
+    function handleDelete(id){
+        let newData=demoData.filter((ele)=>ele.id!==id)
+        setDemoData(newData)
+    }
     return(
         <div className="container">
                 {
                     demoData.map((ele) => {
                         return (
                             <div>
+                                <p><b>Id: </b>{ele.id}</p>
                                 <p><b>Name: </b>{ele.userName}</p>
                                 <p><b>Email: </b>{ele.email}</p>
                                 <p><b>Password: </b>{ele.password}</p>
                                 <p><b>Phone: </b>{ele.phone}</p>
+                                <button onClick={()=>handleDelete(ele.id)}>DELETE</button>
                             </div>
                         )
                     })
