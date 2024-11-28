@@ -26,3 +26,44 @@
 - cd theFolderName
 - npm i / install
 - npm run dev
+
+- export
+- two types of export
+- named export => export multiple stuff
+export let fn = () => {}
+
+export let str = "masai"
+
+=>{fn ,str}
+
+- default export => 
+
+let fn =()=>{}
+export default fn
+
+
+
+-import
+ - from named export
+recieving an {}=obj from exportfile
+
+{fn,str} destructure this
+
+- from default export
+
+fn from exportfile
+
+
+
+
+lifecycle of react
+
+birth       process      died
+
+mount       update       unmount
+            usestate     removed
+            re-render
+
+
+side-Effects => fetch(url)
+             => consoling   
