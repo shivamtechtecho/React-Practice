@@ -1,0 +1,9 @@
+- useRef()
+
+- a hook that can be used to access VDOMs elements
+- holds values in states, and can persist that value in multiple re-renders => doesn't cause any re-render itself.
+
+-Recap
+
+- Component Lifecycle => mount, update, unmount
+- useRef

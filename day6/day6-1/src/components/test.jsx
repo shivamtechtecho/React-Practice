@@ -1,5 +1,5 @@
-export const Test=()=>{
+export const Test=({inWidth})=>{
     return(
-        <h2>Test</h2>
+        <h2>Test:{inWidth}</h2>
     )
 }
