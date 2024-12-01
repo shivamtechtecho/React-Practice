@@ -30,7 +30,7 @@ let Form = () => {
     async function showData() {
         let res = await axios.get(apiUrl)
         setGetData(res.data)
-        // console.log(res.data)
+        console.log(res.data)
     }
 
 
