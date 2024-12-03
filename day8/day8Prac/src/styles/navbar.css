@@ -1,0 +1,11 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(midnightblue,pink);
+    padding: 20px;
+    /* border: 1px solid black; */
+    
+}
+.navbar Link{
+    list-style: none;
+}
